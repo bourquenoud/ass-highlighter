@@ -63,13 +63,7 @@
 		"comment-block": {
 			"name": "comment.block",
 			"begin":"/\\*",
-			"end":"\\*/",
-			"patterns": [
-				{
-					"name": "comment.block",
-					"match": "\\\\."
-				}
-			]
+			"end":"\\*/"
 		},
 		"constant" :{
 			"name": "constant.numeric.integer.ass",
