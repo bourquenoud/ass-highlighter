@@ -9,6 +9,9 @@
 			"include": "#strings"
 		},
 		{
+			"include": "#bit-constant-literal"
+		},
+		{
 			"include": "#bit-constant"
 		},
 		{
@@ -34,7 +37,7 @@
 		"command": {
 			"patterns": [{
 				"name": "keyword.control.ass",
-				"match": "%(pattern|enum|param|order|format|opcode)(?=\\s)"
+				"match": "%(pattern|enum|param|order|format|opcode|constant)(?=\\s)"
 			}]
 		},
 		"substitution" :{
@@ -52,9 +55,13 @@
 				}
 			]
 		},
-		"bit-constant": {
-			"name": "constant.numeric.bit-constant.ass",
+		"bit-constant-literal": {
+			"name": "constant.numeric.ass",
 			"match": "\\$[0-9]+(h|o|d|b)?"
+		},
+		"bit-constant": {
+			"name": "constant.numeric.ass",
+			"match": "\\$[a-z][a-z0-9_]*"
 		},
 		"comment": {
 			"name": "comment.line",
@@ -66,7 +73,7 @@
 			"end":"\\*/"
 		},
 		"constant" :{
-			"name": "constant.numeric.integer.ass",
+			"name": "constant.language.integer.ass",
 			"match": "[0-9]+"
 		}
 	},
