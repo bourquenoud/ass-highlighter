@@ -1,0 +1,25 @@
+{
+    "name": "ass-highlighter",
+    "displayName": "ass_highlighter",
+    "description": "Provides syntax colouring for the ASS syntax",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ass",
+            "aliases": ["ass", "ass"],
+            "extensions": [".ass"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ass",
+            "scopeName": "source.ass",
+            "path": "./syntaxes/ass.tmLanguage.json"
+        }]
+    }
+}
