@@ -3,18 +3,34 @@
 	"name": "ass",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#command"
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#bit-constant"
+		},
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#constant"
+		},
+		{
+			"include": "#substitution"
 		}
 	],
 	"repository": {
-		"keywords": {
+		"command": {
 			"patterns": [{
 				"name": "keyword.control.ass",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "%(pattern|enum|param|order|format|opcode)(?=\\s)"
 			}]
+		},
+		"substitution" :{
+			"name": "keyword.ass",
+			"match": "[A-Z_]+(?=\\([0-9]*\\))"
 		},
 		"strings": {
 			"name": "string.quoted.double.ass",
@@ -26,6 +42,18 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"bit-constant": {
+			"name": "constant.numeric.bit-constant.ass",
+			"match": "\\$[0-9]+(h|o|d|b)?"
+		},
+		"comment": {
+			"name": "comment.line",
+			"match": "//.*"
+		},
+		"constant" :{
+			"name": "constant.numeric.integer.ass",
+			"match": "[0-9]+"
 		}
 	},
 	"scopeName": "source.ass"
