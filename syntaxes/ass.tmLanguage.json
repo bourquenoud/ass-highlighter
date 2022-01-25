@@ -15,6 +15,15 @@
 			"include": "#comment"
 		},
 		{
+			"include": "#comment-block"
+		},
+		{
+			"include": "#comment-doc"
+		},
+		{
+			"include": "#comment-block-doc"
+		},
+		{
 			"include": "#constant"
 		},
 		{
@@ -50,6 +59,17 @@
 		"comment": {
 			"name": "comment.line",
 			"match": "//.*"
+		},
+		"comment-block": {
+			"name": "comment.block",
+			"begin":"/\\*",
+			"end":"\\*/",
+			"patterns": [
+				{
+					"name": "comment.block",
+					"match": "\\\\."
+				}
+			]
 		},
 		"constant" :{
 			"name": "constant.numeric.integer.ass",
