@@ -1,6 +1,6 @@
 # ass-highlighter README
 
-Small VS Code extension for highlighting [ASS](https://github.com/elzaidir/ass) syntax.
+Small VS Code extension for highlighting [ASS](https://github.com/bourquenoud/ass) syntax.
 
 # Installation
 
