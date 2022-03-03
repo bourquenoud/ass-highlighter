@@ -4,4 +4,4 @@ Small VS Code extension for highlighting [ASS](https://github.com/elzaidir/ass) 
 
 # Installation
 
-Go to your VS Code `extensions` directory and `git clone https://github.com/elzaidir/ass-highlighter.git`. The restart VS Code.
+Go to your VS Code `extensions` directory and `git clone https://github.com/bourquenoud/ass-highlighter.git`. The restart VS Code.
