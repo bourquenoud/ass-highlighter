@@ -37,7 +37,7 @@
 		"command": {
 			"patterns": [{
 				"name": "keyword.control.ass",
-				"match": "%(pattern|enum|param|order|format|opcode|constant)(?=\\s)"
+				"match": "%(pattern|enum|param|order|format|opcode|constant|code|override|output)(?=\\s)"
 			}]
 		},
 		"substitution" :{
