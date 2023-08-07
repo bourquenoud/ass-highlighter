@@ -2,7 +2,7 @@
 
 Small VS Code extension for highlighting [ASS](https://github.com/bourquenoud/ass) syntax.
 
-***INFO :*** *This syntax highlighter is a bit outdated*
+***WARNING :*** *This syntax highlighter is broken and not compatible with VS Code anymore*
 
 # Installation
 
